@@ -15,7 +15,10 @@ const Header: React.FC = () => {
   return (
     <header className={Styles.headerWrap}>
       <div className={Styles.headerContent}>
-        <Logo />
+        <div className={Styles.logoContainer}>
+          <Logo />
+          <p>Youse</p>
+        </div>
         <div className={Styles.logoutWrap}>
           <span data-testid="username">{getCurrentAccount().name}</span>
           <a data-testid="logout" href="#" onClick={buttonClick}>Sair</a>

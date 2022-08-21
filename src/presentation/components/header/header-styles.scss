@@ -2,21 +2,25 @@
 
 .headerWrap {
   display: flex;
-  background-color: $primary;
-  border-top: 40px solid $primaryDark;
+  background-color: $white;
   justify-content: center;
 
   .headerContent {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 800px;
+    max-width: 1440px;
     flex-grow: 1;
-    padding: 24px 40px;
+    padding: 16px;
 
-    img {
-      width: 60px;
-      align-self: center;
+    .logoContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        margin-left: 8px;
+      }
     }
 
     .logoutWrap {
@@ -25,7 +29,7 @@
       align-self: center;
       align-items: flex-end;
       justify-content: center;
-      color: $white;
+      color: $primary;
 
       span {
         font-size: 16px;
@@ -33,7 +37,7 @@
       }
 
       a {
-        color: $white;
+        color: $primary;
         text-decoration: none;
 
         &:hover {
